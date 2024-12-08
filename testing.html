@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            font-family: serif;
+            text-align:end;
+            text-transform: lowercase;
+            letter-spacing: -2px;
+            line-height: 2;
+            border: solid blue 2px;
+            width: 900px;
+            height: 700;
+            background-image: url("imge/apple-tv-background.jpg");/*not working*/
+            background-repeat:repeat-x;
+            background-position: center;
+            background-size: contain;
+            background-color: aquamarine;
+           
+        }
+        .container{
+            display: flex;
+            background-color:aqua;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            height: 100vh;
+            
+            }
+        .b{
+            border: solid black;
+            display: flex;
+            flex-direction: row;
+            width: 30px;
+            height: 30vh;
+            order: 3;
+            flex-shrink: 1;
+            flex-basis: 5%;/*flex,*//*flex-box-axis, align-self*/
+            
+
+        }
+        .b1{
+            flex-grow: 1;
+            align-self: self-start;
+        }
+        .b2{
+            flex-grow: 2;
+            align-self: center;
+        }
+        .b3{
+            flex-grow: 3;
+            align-self: self-end;
+        }
+       
+        .containers{
+            border: black solid 3px;
+            display: flex;
+            
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+
+        }
+        .centrBox{
+            border: solid black 2px;
+            height: 300px;
+            width: 300px;
+            
+        }
+        .centrBox p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+     @media (min-width: 600px) and (max-width:800px){
+        .container{
+            background-color: red;
+            border: blue solid 3px;
+        }/*based on orientation and rsolution,min-width: 50vw*/
+     }
+
+    </style>
+</head>
+<body>
+    <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Aperiam, et saepe illum minus aliquid delectus maxime a dolorem asperiores similique debitis,
+         blanditiis laudantium vero unde ad magnam quo praesentium quia?
+    </section>
+    <div class="container">
+        <div class="b b1">1</div>
+        <div class="b b2">2</div>
+        <div class="b b3">3</div>
+    </div>
+    <div class="containers">
+    <div class="centrBox">
+        <p>1</p>
+    </div>
+    </div>
+</body>
+</html>
+<!--tnext:grid for box/tables-->
